@@ -16,6 +16,8 @@ void CountDown(int& hours, int& minutes, int& seconds){
     }
 
     cout<<'\r'<<setfill('0')<<setw(2)<<hours<<":"<<setw(2)<<minutes<<":"<<setw(2)<<seconds<<flush;
+    //flush makes the new printed value visible immediately.
+    // '\r' moves the cursor back,
     this_thread::sleep_for(chrono::seconds(1));
   }
 }
