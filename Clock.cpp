@@ -13,7 +13,7 @@ int main() {
 
     cout << put_time(localTime, "%d-%b-%y  %OI:%M:%S %p") <<'\r'<< flush;NL;
     cout << put_time(localTime, "%r") <<'\r'<< flush;NL;
-    cout << '\r'<< localTime->tm_hour << ':'<< localTime->tm_min << ':'  << localTime->tm_sec<<flush;
+    cout << '\r'<<setfill('0')<<setw(2)<< localTime->tm_hour << ':'<<setw(2)<< localTime->tm_min << ':'<<setw(2)<< localTime->tm_sec<<flush;
     this_thread::sleep_for(chrono::seconds(1));
   }
 }

@@ -15,6 +15,6 @@ int main() {
     int indexNo=rand()%10;
       OTP+=s[indexNo];
   }
-  cout<<OTP;NL;
+  cout<<"Your OTP is: "<<OTP;NL;
 }
 

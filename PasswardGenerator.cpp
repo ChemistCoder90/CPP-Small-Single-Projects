@@ -31,6 +31,6 @@ string passwordGenerator(){
 }
 
 int main() {
-  cout<<passwordGenerator();NL;
+  cout<<"Your Random Password is: "<<passwordGenerator();NL;
 }
 

@@ -37,19 +37,19 @@ void CountDownInTimeFormat(const string &time){
   seconds++; //why? if(seconds>0) seconds--;(line:8) decrease sec then sleep 1 sec.
   CountDown(hours, minutes, seconds);
 
-  cout<<"Time Is UP. Thanks for Using.";
+  cout<<"\nTime Is UP. Thanks for Using.";
 
 }
 
 void CountDownInSecondFormat(int& seconds){
   int hours=seconds/3600;
-  cout<<hours;NL;
+  // cout<<hours;NL;
   seconds-=(hours*3600);
   int minutes=seconds/60;
   seconds-=(minutes*60);
   seconds++;
   CountDown(hours, minutes, seconds);
-  cout<<"Time Is UP. Thanks for Using.";
+  cout<<"\nTime Is UP. Thanks for Using.";
 }
 
 int main() {
