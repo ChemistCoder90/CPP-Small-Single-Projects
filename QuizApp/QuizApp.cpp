@@ -6,7 +6,7 @@ using namespace std;
 #define NL printf("\n")
 
 // Text Color functions
-//copied from Tahsin coder(Utube)
+//Idea from Tahsin coder(Utube)
 void Red()          { cout << "\033[38;2;255;0;0m"; }
 void Yellow()       { cout << "\033[38;2;255;255;0m"; }
 void Blue()          { cout << "\033[38;2;0;0;255m"; }
