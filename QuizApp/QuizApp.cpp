@@ -1,19 +1,20 @@
 #include <bits/stdc++.h>
 #include <iostream>
-#include<fstream>
+#include <fstream>
+#include <cstdlib>
 using namespace std;
 #define NL printf("\n")
 
 // Text Color functions
 //copied from Tahsin coder(Utube)
-void Red ()          {   cout<<"\033[1;31m";   }
-void Yellow()        {   cout<<"\033[1;33m";   }
-void Blue()          {   cout<<"\033[0;34m";   }
-void Green()         {   cout<<"\033[0;32m";   }
-void Purple()        {   cout<<"\033[0;35m";   }
-void White()         {   cout<<"\033[0;37m";   }
-void Cyan()          {   cout<<"\033[0;36m";   }
-void ResetTextColor(){   cout<<"\033[0m";      }
+void Red()          { cout << "\033[38;2;255;0;0m"; }
+void Yellow()       { cout << "\033[38;2;255;255;0m"; }
+void Blue()          { cout << "\033[38;2;0;0;255m"; }
+void Green()         { cout << "\033[38;2;0;255;0m"; }
+void Purple()        { cout << "\033[38;2;128;0;128m"; }
+void White()         { cout << "\033[38;2;255;255;255m"; }
+void Cyan()          { cout << "\033[38;2;0;255;255m"; }
+void ResetTextColor(){ cout << "\033[0m"; }
 
 struct QuestionFormat{
   string Qustion;
@@ -46,7 +47,11 @@ class QuizApp{
         }
       }
       else{
+        Red();
         cout<<"\nFaild to open  File. Please try again. Thanks.\n";
+        ResetTextColor();
+        files.close();
+        exit(EXIT_FAILURE); // if failed to open file, program will terminate immediately. #include <cstdlib> required.
       }
       files.close();
     }
