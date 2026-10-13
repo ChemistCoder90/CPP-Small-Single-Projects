@@ -101,10 +101,12 @@ class QuizApp{
         }
     }
     void PrintScore(){
+      cout<<"-----------------------------------------------------";NL;
       Purple();
       cout<<"Your Total Score is: "<<score<<" Out of "<<QusList.size();NL;
-      cout<<"Thanks for Joining to the Quiz Test. Have a nice day.";
+      cout<<"Thanks for Joining to the Quiz Test. Have a nice day.";NL;
       ResetTextColor();
+      cout<<"-----------------------------------------------------";NL;
     }    
 };
 
