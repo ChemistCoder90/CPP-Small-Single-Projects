@@ -34,7 +34,16 @@ class QuizApp{
       LoadFile();
     }
     void LoadFile(){
-      fstream files("QuizApp.txt");
+      string fileName;
+      cout<<"Please enter the file name for the Questions: ";
+      cin>>fileName;
+      fstream files(fileName);
+      if(!files.is_open()){
+        Red();
+        cout<<"Unable to read questions from Your given file. Question will be provided from Default QuizApp.txt.";NL;NL;
+        files.clear();
+        files.open("QuizApp.txt");
+      }
       QuestionFormat Question;
       if(files.is_open()){
         while(getline(files, Question.Qustion)){
