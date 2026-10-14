@@ -1,0 +1,30 @@
+Who invented C++?
+Dennis Ritchie
+Ken Thompson
+Brian Kernighan
+Bjarne Stroustrup
+Bjarne Stroustrup
+What is C++?
+C++ is an object oriented programming language
+C++ is a procedural programming language
+C++ supports both procedural and object oriented programming language
+C++ is a functional programming language
+C++ supports both procedural and object oriented programming language
+Which of the following is the correct syntax of including a user defined header files in C++?
+#include [userdefined]
+#include “userdefined”
+#include <userdefined.h>
+#include <userdefined>
+#include “userdefined”
+Which of the following is used for comments in C++?
+/* comment */
+// comment */
+// comment
+both // comment or /* comment */
+both // comment or /* comment */
+Which of the following extension is used for user-defined header file in c++?
+hg
+cpp
+h
+hf
+h

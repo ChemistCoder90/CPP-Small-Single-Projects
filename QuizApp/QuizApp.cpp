@@ -40,7 +40,7 @@ class QuizApp{
       fstream files(fileName);
       if(!files.is_open()){
         Red();
-        cout<<"Unable to read questions from Your given file. Question will be provided from Default QuizApp.txt.";NL;NL;
+        cout<<"Unable to read questions from Your given file("<<fileName<<"). Question will be provided from Default QuizApp.txt.";NL;NL;
         files.clear();
         files.open("QuizApp.txt");
       }
