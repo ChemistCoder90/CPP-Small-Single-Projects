@@ -81,7 +81,7 @@ class QuizApp{
         cout<<"Please Enter Your answer(A,B,C,D) : ";
         cin>>ans;
         //user may give input like "ab"/ "cdasdd". below line will take the first one only
-        //discards characters from the input buffer until it reaches a newline ('\n')
+        //Take the 1st character and discards characters from the input buffer until it reaches a newline ('\n')
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         Green();
         CheckAnswer(ans, u);
